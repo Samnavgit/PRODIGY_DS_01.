@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sms
+
+df = pd.read_csv(r"C:\Users\lenovo\Desktop\Data (1)s.csv")
+
+gender_counts=df['Gender'].value_counts()
+
+plt.bar(gender_counts.index,gender_counts)
